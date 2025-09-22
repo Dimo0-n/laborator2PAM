@@ -57,7 +57,7 @@ flutter:
     - assets/lateral_menu.svg
     - assets/notification.svg
     - assets/img_1.png
-    - assets/img_2.png
+    - assets/bbc_logo.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -26,24 +26,31 @@ class TrendingNewsWidget extends StatelessWidget {
             ],
           ),
 
-          const SizedBox(height: 12), // spațiu între text și carusel
+          const SizedBox(height: 12),
 
-          // Carusel scrollabil orizontal
           SizedBox(
-            height: 344, // înălțimea caruselului
+            height: 300,
             child: ListView(
               scrollDirection: Axis.horizontal,
-              physics: BouncingScrollPhysics(), // efect de scroll mai smooth
+              physics: BouncingScrollPhysics(),
               children: const [
-                TrendingCard(title: 'Global Summit on Climate '
-                    'Change: Historic Agreement Reached', imagePath: 'assets/img_1.png'),
-                TrendingCard(title: 'Global Summit on Climate '
-                    'Change: Historic Agreement Reached', imagePath: 'assets/img_1.png'),
-                TrendingCard(title: 'Global Summit on Climate '
-                    'Change: Historic Agreement Reached', imagePath: 'assets/img_1.png'),
+                TrendingCard(title: 'Global Summit on Climate\n'
+                    'Change: Historic Agreement Reached', imagePath: 'assets/img_1.png',
+                  source: "BBC News",
+                  date: "Jun 9, 2023",),
+                TrendingCard(title: 'Global Summit on Climate\n '
+                    'Change: Historic Agreement Reached', imagePath: 'assets/img_1.png',
+                  source: "BBC News",
+                  date: "Jun 9, 2023",),
+                TrendingCard(title: 'Global Summit on Climate\n '
+                    'Change: Historic Agreement Reached', imagePath: 'assets/img_1.png',
+                  source: "BBC News",
+                  date: "Jun 9, 2023",),
               ],
             ),
-          )
+          ),
+          const SizedBox(height: 12),
+
         ],
       ),
     );

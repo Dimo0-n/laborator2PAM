@@ -14,7 +14,6 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Textul de sus
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: RichText(
