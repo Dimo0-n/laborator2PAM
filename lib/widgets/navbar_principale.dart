@@ -18,7 +18,6 @@ AppBar navBar({required String title}) {
           height: 52,
         ),
         onPressed: () {
-          // logica pentru meniul lateral
         },
       ),
     ),

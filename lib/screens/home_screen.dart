@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lab2/widgets/trending_news.dart';
-import '../widgets/navbar.dart';
+import '../widgets/navbar_principale.dart';
 import '../widgets/recommendation_post.dart';
 
 class HomeScreen extends StatelessWidget {
