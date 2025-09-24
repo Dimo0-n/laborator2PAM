@@ -24,7 +24,7 @@ AppBar navBar({required String title}) {
     ),
     actions: [
       Padding(
-        padding: const EdgeInsets.only(top: 0, right: 18),
+        padding: const EdgeInsets.only(top: 0, right: 8),
         child: IconButton(
           icon: SvgPicture.asset(
             'assets/notification.svg',
