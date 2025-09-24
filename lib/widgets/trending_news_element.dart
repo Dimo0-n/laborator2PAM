@@ -18,7 +18,7 @@ class TrendingCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 350, // lățimea cardului
+      width: 305,
       margin: const EdgeInsets.only(right: 12),
       decoration: BoxDecoration(
         color: CupertinoColors.systemGrey6,
@@ -26,24 +26,24 @@ class TrendingCard extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const SizedBox(height: 10),
+          const SizedBox(height: 8),
           Stack(
             children: [
               ClipRRect(
                 borderRadius: const BorderRadius.only(
-                  topLeft: Radius.circular(10),
-                  topRight: Radius.circular(10),
+                  topLeft: Radius.circular(8),
+                  topRight: Radius.circular(8),
                 ),
                 child: Image.asset(
                   imagePath,
-                  height: 185,
+                  height: 161,
                   width: double.infinity,
                   fit: BoxFit.contain,
                 ),
               ),
               Positioned(
-                top: 12,
-                left: 20,
+                top: 10,
+                left: 18,
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
@@ -64,14 +64,14 @@ class TrendingCard extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            padding: const EdgeInsets.only(left: 18, top: 8),
             child: Text(
               title,
               style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               textAlign: TextAlign.start,
             ),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 12),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0),
             child: Row(
@@ -80,11 +80,11 @@ class TrendingCard extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(4),
                   child: SizedBox(
-                    width: 20,
-                    height: 20,
+                    width: 24,
+                    height: 24,
                     child: Image.asset(
                       "assets/bbc_logo.png",
-                      fit: BoxFit.cover, // acoperă toată zona
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
@@ -93,7 +93,7 @@ class TrendingCard extends StatelessWidget {
                 Text(
                   source,
                   style: const TextStyle(
-                    fontSize: 14,
+                    fontSize: 16,
                     color: Colors.grey,
                     fontWeight: FontWeight.w500,
                   ),
@@ -109,7 +109,7 @@ class TrendingCard extends StatelessWidget {
                 Text(
                   date,
                   style: const TextStyle(
-                    fontSize: 14,
+                    fontSize: 16,
                     color: Colors.grey,
                   ),
                 ),

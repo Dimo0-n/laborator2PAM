@@ -7,11 +7,10 @@ class TrendingNewsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 16.0, top: 8.0),
+      padding: const EdgeInsets.only(left: 18, top: 24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Textul de sus
           Row(
             children: [
               Text(
@@ -29,7 +28,7 @@ class TrendingNewsWidget extends StatelessWidget {
           const SizedBox(height: 12),
 
           SizedBox(
-            height: 300,
+            height: 325,
             child: ListView(
               scrollDirection: Axis.horizontal,
               physics: BouncingScrollPhysics(),

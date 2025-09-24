@@ -5,27 +5,36 @@ AppBar navBar({required String title}) {
   return AppBar(
     backgroundColor: Colors.white,
     elevation: 0,
+    toolbarHeight: 60,
     title: Text(title, style: const TextStyle(color: Colors.black)),
-    leading: IconButton(
-      icon: SvgPicture.asset(
-        'assets/lateral_menu.svg',
-        width: 52,
-        height: 52,
-      ),
-      onPressed: () {
-        // logica pentru meniul lateral
-      },
-    ),
-    actions: [
-      IconButton(
+    leading: Padding(
+      padding: const EdgeInsets.only(top: 0, left: 18),
+      child: IconButton(
+        padding: EdgeInsets.zero,
+        constraints: const BoxConstraints(),
         icon: SvgPicture.asset(
-          'assets/notification.svg',
+          'assets/lateral_menu.svg',
           width: 52,
           height: 52,
         ),
         onPressed: () {
-          // logica pentru notificări
+          // logica pentru meniul lateral
         },
+      ),
+    ),
+    actions: [
+      Padding(
+        padding: const EdgeInsets.only(top: 0, right: 18),
+        child: IconButton(
+          icon: SvgPicture.asset(
+            'assets/notification.svg',
+            width: 52,
+            height: 52,
+          ),
+          onPressed: () {
+            // logica pentru notificări
+          },
+        ),
       ),
     ],
   );
