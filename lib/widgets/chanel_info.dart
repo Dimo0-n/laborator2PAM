@@ -37,7 +37,7 @@ class ChannelInfo extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(padding: const EdgeInsets.only(left: 33, top: 32),
+              Padding(padding: const EdgeInsets.only(left: 33, top: 32, right: 18),
                   child: SizedBox(
                     width: 256,
                     child: Row(
@@ -51,7 +51,7 @@ class ChannelInfo extends StatelessWidget {
                   )
               ),
                 const SizedBox(height: 10),
-                Padding(padding: EdgeInsets.only(left: 33, top: 10),
+                Padding(padding: EdgeInsets.only(left: 33, top: 10, right: 18),
                   child:
                     SizedBox(
                     height: 41,

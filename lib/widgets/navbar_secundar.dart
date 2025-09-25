@@ -10,7 +10,7 @@ AppBar navBarSecund({required String title}) {
     title: Text(title, style: const TextStyle(color: Colors.black, fontWeight: FontWeight.w500, fontSize: 22)),
     leading: Padding(
       padding: const EdgeInsets.only(top: 0, left: 18),
-      child: Builder( // <--- asta e cheia
+      child: Builder(
         builder: (context) => IconButton(
           padding: EdgeInsets.zero,
           constraints: const BoxConstraints(),

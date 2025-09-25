@@ -14,13 +14,14 @@ class RecommendationWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            "Recommendation",
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
+          if (isHomePage)
+            const Text(
+              "Recommendation",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          ),
           const SizedBox(height: 16),
           GestureDetector(
             onTap: () {

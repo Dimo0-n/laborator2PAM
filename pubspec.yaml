@@ -59,6 +59,8 @@ flutter:
     - assets/settings_button.svg
     - assets/back_arow.svg
     - assets/settings_navbar.svg
+    - assets/search_icon1.svg
+    - assets/search_icon2.svg
     - assets/forbes_logo.png
     - assets/img_1.png
     - assets/bbc_logo.png
