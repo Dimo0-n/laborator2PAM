@@ -23,12 +23,14 @@ class RecommendationWidget extends StatelessWidget {
               ),
             ),
           const SizedBox(height: 16),
+
           GestureDetector(
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const PostDetails()),
-              );
+              if (isHomePage)
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const PostDetails()),
+                );
             },
             child: Container(
               height: 412,
